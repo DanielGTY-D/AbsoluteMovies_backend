@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "lib": ["ESNext"],
+    "target": "ESNext",
+    "moduleResolution": "nodenext",
+    "module": "nodenext", // Use ESNext module system
+    "strict": false,
+    "sourceMap": true, // Generates corresponding '.map' file
+    "esModuleInterop": true, // Enables emit interoperability between CommonJS and ES Modules
+    "declaration": true, // active generation of .d.ts files
+    "allowImportingTsExtensions": true
+  },
+  "include": ["src/**/*.ts"]
+}
