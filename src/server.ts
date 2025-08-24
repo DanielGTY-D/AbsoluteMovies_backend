@@ -1,8 +1,10 @@
 import express, { type Express } from "express";
 import cors from "cors";
 import userRouter from "./routes/user.ts";
+import moviesRouter from "./routes/movies.ts";
 import { connectDB } from "./config/db.ts";
 import { corsConfig } from "./config/cors.ts";
+
 const app: Express = express();
 
 //conectar a la base de datos
@@ -15,5 +17,6 @@ app.use(express.json());
 app.use(cors(corsConfig));
 
 app.use("/api", userRouter);
+app.use("/api", moviesRouter);
 
 export default app;

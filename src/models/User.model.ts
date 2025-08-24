@@ -4,6 +4,7 @@ export interface IUser {
   username: string;
   email: string;
   password: string;
+  favoriteContent: string | string[];
 }
 
 const userSchema = new Schema({
@@ -11,6 +12,7 @@ const userSchema = new Schema({
     type: String,
     required: true,
     trim: true,
+    unique: true,
   },
   email: {
     type: String,
@@ -24,7 +26,7 @@ const userSchema = new Schema({
     trim: true,
     required: true,
   },
-  animesFav: {
+  favoriteContent: {
     type: String,
     default: "[]",
   },
