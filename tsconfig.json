@@ -10,7 +10,8 @@
     "sourceMap": true, // Generates corresponding '.map' file
     "esModuleInterop": true, // Enables emit interoperability between CommonJS and ES Modules
     "declaration": true, // active generation of .d.ts files
-    "allowImportingTsExtensions": true
+    "allowImportingTsExtensions": true,
+    "noEmit": true
   },
   "include": ["src/**/*.ts"]
 }
