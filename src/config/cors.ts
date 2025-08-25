@@ -5,6 +5,7 @@ const allowedOrigins = [
   "http://localhost:5173", // Vite
   "https://absolutemovies.netlify.app/",
   "https://absolutemovies.netlify.app",
+  undefined,
 ];
 
 export const corsConfig: CorsOptions = {
