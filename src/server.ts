@@ -10,6 +10,9 @@ const app: Express = express();
 //conectar a la base de datos
 connectDB();
 
+// hablitar cors
+app.use(cors(corsConfig));
+
 // habilitar leer la recepcion de datos en formato JSON
 app.use(express.json());
 
@@ -17,9 +20,6 @@ app.use((req, res, next) => {
   console.log("headers", req.headers);
   next();
 });
-
-// hablitar cors
-app.use(cors(corsConfig));
 
 app.use("/api", userRouter);
 app.use("/api", moviesRouter);
