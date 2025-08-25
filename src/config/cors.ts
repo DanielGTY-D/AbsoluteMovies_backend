@@ -6,6 +6,7 @@ const allowedOrigins = [
   "https://absolutemovies.netlify.app/",
   "https://absolutemovies.netlify.app",
   undefined,
+  "undefined",
 ];
 
 export const corsConfig: CorsOptions = {
