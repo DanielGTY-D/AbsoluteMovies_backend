@@ -1,10 +1,10 @@
 import { Router, type IRouter } from "express";
 import { body } from "express-validator";
-import { handleInputErrors } from "../middleware/validation.ts";
+import { handleInputErrors } from "../middleware/validation";
 import {
   removeFavoriteMovies,
   setFavoriteMovies,
-} from "../controllers/movies.controller.ts";
+} from "../controllers/movies.controller";
 
 const router: IRouter = Router();
 

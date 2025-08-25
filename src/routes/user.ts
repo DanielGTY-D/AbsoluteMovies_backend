@@ -1,11 +1,7 @@
 import { Router, type IRouter } from "express";
 import { body } from "express-validator";
-import {
-  login,
-  register,
-  updateProfile,
-} from "../controllers/user.controller.ts";
-import { handleInputErrors } from "../middleware/validation.ts";
+import { login, register, updateProfile } from "../controllers/user.controller";
+import { handleInputErrors } from "../middleware/validation";
 
 const router: IRouter = Router();
 

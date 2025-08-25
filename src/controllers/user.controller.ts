@@ -1,7 +1,7 @@
 import type { Request, Response } from "express";
-import User from "../models/User.model.ts";
-import { checkPassword, hashPassword } from "../utils/hash.ts";
-import { generateJWT } from "../config/jwt.ts";
+import User from "../models/User.model";
+import { checkPassword, hashPassword } from "../utils/hash";
+import { generateJWT } from "../config/jwt";
 
 export const register = async (req: Request, res: Response) => {
   const { email, password, username } = req.body;

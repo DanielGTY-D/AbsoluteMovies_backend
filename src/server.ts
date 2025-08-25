@@ -1,9 +1,9 @@
 import express, { type Express } from "express";
 import cors from "cors";
-import userRouter from "./routes/user.ts";
-import moviesRouter from "./routes/movies.ts";
-import { connectDB } from "./config/db.ts";
-import { corsConfig } from "./config/cors.ts";
+import userRouter from "./routes/user";
+import moviesRouter from "./routes/movies";
+import { connectDB } from "./config/db";
+import { corsConfig } from "./config/cors";
 
 const app: Express = express();
 
