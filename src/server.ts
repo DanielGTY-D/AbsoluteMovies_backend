@@ -13,6 +13,11 @@ connectDB();
 // habilitar leer la recepcion de datos en formato JSON
 app.use(express.json());
 
+app.use((req, res, next) => {
+  console.log("headers", req.headers);
+  next();
+});
+
 // hablitar cors
 app.use(cors(corsConfig));
 
