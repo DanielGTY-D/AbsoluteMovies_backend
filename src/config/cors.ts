@@ -15,5 +15,5 @@ export const corsConfig: CorsOptions = {
       callback(new Error("CORS no permitido"));
     }
   },
-  credentials: true, // si usas cookies o auth headers
+  // credentials: true, // si usas cookies o auth headers
 };
