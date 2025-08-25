@@ -1,12 +1,17 @@
 import cors from "cors";
 import { CorsOptions } from "cors";
+// const allowedOrigins = [
+//   process.env.FRONTEND_URL, // ej: "https://mi-frontend.netlify.app"
+//   "http://localhost:5173", // Vite
+//   "https://absolutemovies.netlify.app/",
+//   "https://absolutemovies.netlify.app",
+//   undefined,
+//   "undefined",
+// ];
+
 const allowedOrigins = [
   process.env.FRONTEND_URL, // ej: "https://mi-frontend.netlify.app"
   "http://localhost:5173", // Vite
-  "https://absolutemovies.netlify.app/",
-  "https://absolutemovies.netlify.app",
-  undefined,
-  "undefined",
 ];
 
 export const corsConfig: CorsOptions = {
